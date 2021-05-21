@@ -35,7 +35,7 @@ public class BaiTapBuoi7_1 {
         }
         System.out.println("\nTổng của đường chéo chính của ma trận: " +tong);
     }
-    public static void arrage (int arr[][], int n) {
+    public static void sapxep2 (int arr[][], int n) {
         if (n < 2) {
             System.out.println("Không sắp được do mảng chỉ có một hàng");
         } else {

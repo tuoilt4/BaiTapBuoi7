@@ -20,7 +20,7 @@ public class Main {
                 BaiTapBuoi7_1.lkdchinh(arra, n);
                 BaiTapBuoi7_1.congcheochinh(arra, n);
                 System.out.println("In ma trận có dòng hai sắp xếp theo chiều tăng dần");
-                BaiTapBuoi7_1.arrage(arra,n);
+                BaiTapBuoi7_1.sapxep2(arra,n);
                 break;
             }
             case 2: {
