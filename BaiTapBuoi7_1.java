@@ -35,28 +35,23 @@ public class BaiTapBuoi7_1 {
         }
         System.out.println("\nTổng của đường chéo chính của ma trận: " +tong);
     }
-    public static void sapxep (int arr[][], int n) {
-        if (n <2)  {System.out.println("Mảng chỉ có một hàng");}
-            else {
-                int temp = arr[2][0];
-                for (int i = 2;i<3 ;i++ ) {
-                    for (int j = 0; j < n; j++) {
-                        for (int k = j + 1; k < n; k++) {
-                            if (arr[i][j] > arr[i][k]) {
-                                temp = arr[i][j];
-                                arr[i][j] = arr[i][k];
-                                arr[i][k] = temp;
-                            }
+    public static void arrage (int arr[][], int n) {
+        if (n < 2) {
+            System.out.println("Không sắp được do mảng chỉ có một hàng");
+        } else {
+            int temp = arr[1][0];
+            for (int i = 1; i < 2; i++) {
+                for (int j = 0; j < n; j++) {
+                    for (int k = j + 1; k < n; k++) {
+                        if (arr[i][j] > arr[i][k]) {
+                            temp = arr[i][j];
+                            arr[i][j] = arr[i][k];
+                            arr[i][k] = temp;
                         }
                     }
                 }
             }
-            System.out.println("In mảng: ");
-    for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                System.out.print(arr[i][j] + "\t");
-            }
-            System.out.println();
+            inmatran(arr,n);
         }
-        }
+    }
 }
